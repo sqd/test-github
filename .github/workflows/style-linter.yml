@@ -15,5 +15,6 @@ jobs:
       - run: curl -LJOo ./clang-format-440 https://github.com/sqd/eecs440-format/releases/download/v0.0.1/clang-format-440
       - run: chmod u+x ./clang-format-440
       - uses: actions/checkout@v2
+      - run: ./clang-format-440 --help
       # - run: find . -path ./.git -prune -false -o -iname *.h -o -iname *.cpp 2>/dev/null | xargs ./clang-format-440 --style=EECS440 --dry-run --Werror
       - run: find src -iname "*.h" -o -iname "*.cpp" 2>/dev/null | xargs ./clang-format-440 --style=EECS440 --dry-run --Werror
