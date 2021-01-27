@@ -1,0 +1,17 @@
+---
+Checks: 'clang-diagnostic-*,
+  clang-analyzer-*,
+  cppcoreguidelines-*,
+  bugprone-*,
+  clang-analyzer-*,
+  misc-*,
+  modernize-*,
+  performance-*,
+  portability-*,
+  readability-*,
+  -modernize-use-trailing-return-type,
+  -readability-braces-around-statements,
+  -misc-unused-parameters,
+  -readability-isolate-declaration'
+WarningsAsErrors: '*'
+HeaderFilterRegex: '.*'
