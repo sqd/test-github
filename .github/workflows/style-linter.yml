@@ -21,6 +21,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: sudo apt update && sudo apt install -y clang-tidy cmake
-      - run: cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
-      - run: find . -path ./.git -prune -false -o -iname "*.h" -o -iname "*.cpp" | xargs ./clang-tidy
+      - run: find . -path ./.git -prune -false -o -iname "*.h" -o -iname "*.cpp" | xargs clang-tidy
 
